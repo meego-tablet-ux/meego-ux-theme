@@ -1,11 +1,23 @@
+==================================
 Contributing to the MeeGo UX Theme
 ==================================
 
-This is a simple step by step process on how to get set up
-to contribute to the MeeGo UX Theme.
+This is a simple step by step process on how to get set up to
+contribute to the MeeGo UX Theme.
 
-Step 1-4 are a one-time process. Steps 5-9 are part of your daily
-workflow.
+Step 0-4 are a one-time process. Steps 5-9 are part of your daily workflow.
+
+
+0. Get Git
+
+     Mac:
+     Install the package from http://code.google.com/p/git-osx-installer/downloads/list
+
+     Fedora:
+     "yum install git"
+
+     Ubuntu:  
+     "apt-get install git"
 
 
 1. Get a Gitorious account
@@ -16,10 +28,10 @@ workflow.
 2. Add your SSH public key to your account
 
     You can do this by going to your Dashboard and click "Manage
-    SSH keys", then "Add SSH key". Your SSH public key usually is
-    "/Users/<USER>/.ssh/id_rsa.pub".
+    SSH keys", then "Add SSH key". Run " open /Users/<USER>/.ssh/id_rsa.pub"
+    to see your public key. Paste it into the field on the website.
 
-    If you don't have a SSH keypair yet, you can create one like this:
+    If you don't have a SSH key pair yet, you can create one like this:
     "ssh-keygen -t RSA"
 
 
@@ -40,12 +52,17 @@ workflow.
     Clone it to your machine:
     "git clone git@gitorious.org:~<USER>/meego-ux/<USER>s-meego-ux-theme.git"
 
-    Or use your favourite graphical client.
+    Or with Tower:
+
+
+    Or with SparkleShare:
+    Select Gitorious and put in "" as the folder name.
 
 
 5. Set up your contact info
 
     Add your details so others can see who made what changes.
+    This is only needed if you're using the command line interface.
 
     "git config user.name Your Name"
     "git config user.email your@email.com"
@@ -58,7 +75,12 @@ workflow.
     "git add --all"
     "git commit -m 'Tweak the slider widget'"
 
-    Or use your favourite graphical client.
+    Or on Tower:
+    Click "Stage all" or tick the files you want to be added then
+    click commit in the toolbar.
+
+    Or on SparkleShare:
+    You're already done! :)
 
 
 7. Update your local copy
@@ -66,17 +88,21 @@ workflow.
     If changes are made in the upstream repository, you will
     need to get them manually, to prevent conflicts in the future.
 
-    Do: 
+    To merge them in:
     "git pull --rebase git://gitorious.org/meego-ux/meego-ux-theme.git"
-    to merge them in.
 
 
 8. Send your changes to Gitorious
 
     "git push"
 
-    Or use your favourite graphical client.
-    Now your changes are pushed to gitorious for everyone to see.
+    Or on Tower:
+    Click Push in the toolbar.
+
+    Or on SparkleShare:
+    You're already done! :)
+
+    Now your changes are pushed to Gitorious for everyone to see.
 
 
 9. Open a merge request
@@ -84,7 +110,7 @@ workflow.
     Now you should make the maintainers of the MeeGo UX Theme aware
     of your changes, so they can merge them in.
 
-    Go to your personal copy of the repository throughout the web
+    Go to your personal copy of the repository through the web
     interface, and click the "Request merge" button.
 
     All done!
