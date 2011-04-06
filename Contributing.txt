@@ -3,7 +3,10 @@ Contributing to the MeeGo UX Theme
 ==================================
 
 This is a simple step by step process on how to get set up to
-contribute to the MeeGo UX Theme.
+contribute to the MeeGo UX Theme. 
+
+Please keep in mind that for contributed assets we need one for every resolution, so the
+theme will work on any device.
 
 Step 0-4 are a one-time process. Steps 5-9 are part of your daily workflow.
 
