@@ -117,3 +117,44 @@ Step 0-4 are a one-time process. Steps 5-9 are part of your daily workflow.
     interface, and click the "Request merge" button.
 
     All done!
+
+
+
+===========================
+Creating a package with OBS
+===========================
+
+1. In your cloned version of meego-ux-theme:
+
+    - bump the version number in meego-theme-ux.pro
+    qmake
+    make dist
+
+
+2. Get a checkout from OBS (don't do it in your git checkout):
+
+    osc co ADDRESS
+
+
+3. Set up your details
+
+    - edit ~/.vcrc and add:
+        username="your name"
+        email="your email"
+    EDITOR="path to your favourite editor"
+
+
+4. Required steps to make a new release:
+
+    - bump the version number in the .yml file
+    make
+    make spec
+    - delete the old .tar.gz
+    - copy over the .tar.gz created in step 1
+    osc ar && osc ci
+    osc results
+
+5. Make a tag for the release in git:
+
+    git tag "RELEASE_x.x.x"
+    git push --tags
