@@ -1,0 +1,17 @@
+===========
+Icon Naming
+===========
+
+Some things to keep in mind when choosing file names for icons:
+
+- Use dashes "-", not underscores "_" or spaces " "
+- Use a descriptive name that conveys what action, status or object your 
+  icon represents, instead of describing what it looks like 
+- Spell out all words, don't abbreviate any words to keep the meaning clear
+
+
+State suffixes:
+
+If an icon/widget is in a state where it's interacted with: use -active
+If an icon/widget is in a toggled state: use -selected
+If an icon/widget is in a toggled state and is interacted with: use -selected-active
