@@ -158,3 +158,42 @@ Creating a package with OBS
 
     git tag "RELEASE_x.x.x"
     git push --tags
+
+
+
+=========================================
+Trying out your modifications on a tablet
+=========================================
+
+...
+
+
+
+==============================
+Taking screenshots on a tablet
+==============================
+
+1. Get your MeeGo tablet and connect a keyboard
+
+2. Make sure you are connected to your local network through the Connectivity settings panel
+
+3. Go to the application that you would like to make a screenshot of 
+
+3. Press Ctrl + Alt + F1 and log in
+
+4. Install ImageMagick:
+
+    zypper in ImageMagick
+
+5. Take a screenshot:
+
+    xwd -root -display :0 | convert - screenshot.png
+
+6. Get the screenshot from your working machine connected to the local network:
+
+    Find out the IP address of the tablet:
+    ifconfig
+    
+    Now you can use your favourite FTP application to get the screenshot off the tablet.
+    Use the IP address you just discovered, port 22 (SFTP or SSH), and you username and password.
+    Now you can browse to /home/USERNAME/screenshot.png and copy it over.
