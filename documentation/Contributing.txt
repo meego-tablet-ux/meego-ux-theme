@@ -159,15 +159,18 @@ Creating a package with OBS
     git tag "RELEASE_x.x.x"
     git push --tags
 
-
-
 =========================================
 Trying out your modifications on a tablet
 =========================================
 
-...
+1.  Find out the IP address of the tablet:
+    ifconfig on the command line or go to the Connections area in the settings and expand your connected device.
+    
+2.	Copy the files to the device using your favourite FTP application.
+    Use the IP address you just discovered, port 22 (SFTP or SSH), and you username and password.
+    Put them in /usr/share/themes/YOUR-RESOLUTION/YOUR-PATH
 
-
+3.	Reboot and take a look.
 
 ==============================
 Taking screenshots on a tablet
@@ -192,7 +195,7 @@ Taking screenshots on a tablet
 6. Get the screenshot from your working machine connected to the local network:
 
     Find out the IP address of the tablet:
-    ifconfig
+    ifconfig on the command line or go to the Connections area in the settings and expand your connected device.
     
     Now you can use your favourite FTP application to get the screenshot off the tablet.
     Use the IP address you just discovered, port 22 (SFTP or SSH), and you username and password.
