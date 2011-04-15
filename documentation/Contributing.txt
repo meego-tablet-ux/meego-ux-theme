@@ -133,10 +133,10 @@ Creating a package with OBS
 
 2. Get a checkout from OBS (don't do it in your git checkout):
 
-    osc co ADDRESS
+    osc co devel:meego-ux meego-ux-theme
 
 
-3. Set up your details
+3. Set up your details (this is a one time step)
 
     - edit ~/.vcrc and add:
         username="your name"
@@ -146,7 +146,7 @@ Creating a package with OBS
 
 4. Required steps to make a new release:
 
-    - bump the version number in the .yml file
+    - bump the version number in the .yaml file
     make
     make spec
     - delete the old .tar.gz
@@ -154,10 +154,17 @@ Creating a package with OBS
     osc ar && osc ci
     osc results
 
-5. Make a tag for the release in git:
+5. Look at results until you have succeeded. Now download and test your project (use other guides for this).
+
+6. Now send this to trunk
+	osc sr
+
+7. Make a tag for the release in git:
 
     git tag "RELEASE_x.x.x"
     git push --tags
+
+8. Now increment your version number in meego-ux-theme.pro
 
 =========================================
 Trying out your modifications on a tablet
