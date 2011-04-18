@@ -1,3 +1,15 @@
+===============
+What's an icon?
+===============
+
+When working on the MeeGo UX theme we have a slightly different definition for an icon is
+than usual for technical reasons: An icon is an image that can appear in common components and
+is part of set of icons of the same style, used in the same component.
+
+Icons live in the icon/ folder. Images that can be considered icons but don't have a common use case or style
+live in icons/apps/$app.
+
+
 ===========
 Icon Naming
 ===========
@@ -35,9 +47,16 @@ If an icon/widget is in a toggled state and is interacted with: use -selected-ac
 
 
 
-===================
+============================
+Icon + component compositing
+============================
+
+item compositing 
+
+
+====================
 Example Applications
-===================
+====================
 
 The browser would have the following toolbar with the icons from icons/common/toolbar:
 +---------------------------------------------------------------------------------------------------------------------+
