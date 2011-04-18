@@ -6,8 +6,25 @@ Some things to keep in mind when choosing file names for icons:
 
 - Use dashes "-", not underscores "_" or spaces " "
 - Use a descriptive name that conveys what action, status or object your 
-  icon represents, instead of describing what it looks like 
+  icon represents, instead of describing what it looks like.
+
+  For example: "go-back" instead of "arrow_left"
+               "mark-favorite" instead of "heart"
+               "add-attachment" instead of "paperclip"
+
 - Spell out all words, don't abbreviate any words to keep the meaning clear
+- For a list of existing names or inspiration, see:
+  http://standards.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html
+
+
+Where to store icons:
+
+- Icons are stored in a particular component context. Icons that appear in a toolbar live in
+  the icons/common/toolbar/ subfolder, icons that live on an action bar in icons/common/action-bar/.
+  All icons must live in a context. If there isn't a common enough context or style for an icon to live in,
+  it's better to put the icon in apps/$appname
+- Icons that live in the same subfolder should all be in the same style and sizes, which are described
+  in the 'style.txt' file in the same subfolder.
 
 
 State suffixes:
@@ -15,3 +32,20 @@ State suffixes:
 If an icon/widget is in a state where it's interacted with: use -active
 If an icon/widget is in a toggled state: use -selected
 If an icon/widget is in a toggled state and is interacted with: use -selected-active
+
+
+
+===================
+Example Applications
+===================
+
+The browser would have the following toolbar with the icons from icons/common/toolbar:
++---------------------------------------------------------------------------------------------------------------------+
+| [go-back] [go-forward] [view-refresh] [ http://                      [mark-favorite] ] [view-change] [view-actions] |
++---------------------------------------------------------------------------------------------------------------------+
+
+
+The media player would have the following action bar with the icons from icons/common/actionbar:
++---------------------------------------------------------------------------------------------------------------------+
+| [media-skip-backward] [media-playback-start] [media-skip-forward] [------|---------] [media-shuffle] [media-repeat] |
++---------------------------------------------------------------------------------------------------------------------+
