@@ -241,3 +241,4 @@ Updating your tablet with the latest UX packages
      rm -Rf /var/cache/zypper
      zypper refresh
      zypper up
+     reboot
