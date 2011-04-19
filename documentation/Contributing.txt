@@ -166,6 +166,8 @@ Creating a package with OBS
 
 8. Now increment your version number in meego-ux-theme.pro
 
+
+
 =========================================
 Trying out your modifications on a tablet
 =========================================
@@ -173,11 +175,13 @@ Trying out your modifications on a tablet
 1.  Find out the IP address of the tablet:
     ifconfig on the command line or go to the Connections area in the settings and expand your connected device.
     
-2.	Copy the files to the device using your favourite FTP application.
+2.  Copy the files to the device using your favourite FTP application.
     Use the IP address you just discovered, port 22 (SFTP or SSH), and you username and password.
     Put them in /usr/share/themes/YOUR-RESOLUTION/YOUR-PATH
 
-3.	Reboot and take a look.
+3.  Reboot and take a look.
+
+
 
 ==============================
 Taking screenshots on a tablet
@@ -207,3 +211,33 @@ Taking screenshots on a tablet
     Now you can use your favourite FTP application to get the screenshot off the tablet.
     Use the IP address you just discovered, port 22 (SFTP or SSH), and you username and password.
     Now you can browse to /home/USERNAME/screenshot.png and copy it over.
+
+
+
+================================================
+Updating your tablet with the latest UX packages
+================================================
+
+1. Press Ctrl + Alt + F1 and log in
+
+2. Add the repository information:
+
+     nano /etc/zypp/repos.d/devel_meego-ux.conf
+
+   Type the following into the file:
+
+     [devel_meego-ux]
+     name=devel:meego-ux (Trunk)
+     type=rpm-md
+     baseurl=http://download.meego.com/live/devel:/meego-ux/Trunk/
+     gpgcheck=1
+     gpgkey=http://download.meego.com/live/devel:/meego-ux/Trunk/repodata/repomd.xml.key
+     enabled=1
+
+  Save it by pressing Ctrl + X
+
+3. Install the latest packages:
+
+     rm -Rf /var/cache/zypper
+     zypper refresh
+     zypper up
