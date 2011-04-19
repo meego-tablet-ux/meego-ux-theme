@@ -2,12 +2,13 @@
 What's an icon?
 ===============
 
-When working on the MeeGo UX theme we have a slightly different definition for an icon is
-than usual for technical reasons: An icon is an image that can appear in common components and
+When working on the MeeGo UX theme we use a slightly different definition of an icon from what you may expect. This is for boring technical reasons. Our definition is: An icon is an image that can appear in common components and
 is part of set of icons of the same style, used in the same component.
 
 Icons live in the icon/ folder. Images that can be considered icons but don't have a common use case or style
 live in icons/apps/$app.
+
+So don't go cluttering up the icons directory with special purpose one time use assets.
 
 
 ===========
