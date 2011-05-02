@@ -147,7 +147,6 @@ Creating a package with OBS
 4. Required steps to make a new release:
 
     - bump the version number in the .yaml file
-    make
     make spec
     - delete the old .tar.gz
     - copy over the .tar.gz created in step 1
@@ -157,7 +156,7 @@ Creating a package with OBS
 5. Look at results until you have succeeded. Now download and test your project (use other guides for this).
 
 6. Now send this to trunk
-	osc sr
+	osc sr Trunk:Testing meego-ux-theme
 
 7. Make a tag for the release in git:
 
