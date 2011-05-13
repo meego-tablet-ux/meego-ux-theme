@@ -1,11 +1,11 @@
 TEMPLATE = subdirs
 
-themefiles.files += 1280-800-7 1024-600-10
+themefiles.files += 1024-600-10
 themefiles.path += $$INSTALL_ROOT/usr/share/themes/
 
 INSTALLS += themefiles
 
-VERSION = 0.2.8
+VERSION = 0.2.9
 PROJECT_NAME = meego-ux-theme
 
 dist.commands += rm -fR $${PROJECT_NAME}-$${VERSION} &&
