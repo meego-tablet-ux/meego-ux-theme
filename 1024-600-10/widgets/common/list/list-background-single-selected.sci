@@ -2,4 +2,4 @@ border.left:   1
 border.top:    2
 border.bottom: 2
 border.right:  1
-source:        list-active.png
+source:        list-background-single-selected.png

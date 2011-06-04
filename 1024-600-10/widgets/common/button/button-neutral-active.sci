@@ -2,4 +2,4 @@ border.left:   11
 border.top:    9
 border.bottom: 12
 border.right:  11
-source:        button-positive-pressed.png
+source:        button-neutral-active.png
