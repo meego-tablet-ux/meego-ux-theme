@@ -1,5 +1,5 @@
-border.left:   0
-border.top:    6
-border.bottom: 6
-border.right:  0
+border.left:   2
+border.top:    2
+border.bottom: 2
+border.right:  2
 source:        slider-background.png
