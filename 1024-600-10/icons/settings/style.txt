@@ -1,1 +1,1 @@
-56x56 category icons to be used by the settings screen
+55x55 category icons to be used by the settings screen
