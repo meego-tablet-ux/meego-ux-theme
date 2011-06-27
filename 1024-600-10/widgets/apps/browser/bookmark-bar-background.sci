@@ -1,5 +1,5 @@
-border.left:   8
-border.top:    0
-border.bottom: 0
-border.right:  8
+border.left:   1
+border.top:    2
+border.bottom: 1
+border.right:  1
 source:        bookmark-bar-background.png
