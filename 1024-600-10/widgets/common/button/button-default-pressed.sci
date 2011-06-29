@@ -1,5 +1,5 @@
-border.left:   11
-border.top:    9
+border.left:   12
+border.top:    12
 border.bottom: 12
-border.right:  11
+border.right:  12
 source:        button-default-pressed.png
