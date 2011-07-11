@@ -5,7 +5,7 @@ themefiles.path += $$INSTALL_ROOT/usr/share/themes/
 
 INSTALLS += themefiles
 
-VERSION = 0.2.14
+VERSION = 0.3.0
 PROJECT_NAME = meego-ux-theme
 
 dist.commands += rm -fR $${PROJECT_NAME}-$${VERSION} &&
